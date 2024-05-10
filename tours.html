@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tours 2024 / 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="pagina css/tours.css"> <!-- Tu CSS personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
+    <link rel="stylesheet" href="fotos/imagen.ico">
+</head>
+<body class="img">
+    
+    <header class="text-center m-8 p-8">
+        <h1 class="text-6xl italic text-green-700">Tours 2024 / 2025</h1>
+    </header>
+
+    <main class="bg-black bg-opacity-75 rounded-3xl p-8 m-8">
+        <!-- Ejemplo con botones deshabilitados para eventos "sold out" -->
+        <div class="bor text-center">
+            <h2 class="text-red-700 italic">Argentina, Movistar Arena</h2>
+            <p>21-09-2024</p>
+            <button>Comprar Ticket <i class="fas fa-ticket-alt"></i></button>
+        </div>
+
+        <div class="bor text-center">
+            <h2 class="text-red-600 italic">Paraguay, Asuncion</h2>
+            <p>04-06-2024</p>
+            <button>Comprar Ticket <i class="fas fa-ticket-alt"></i></button>
+        </div>
+
+        <div class="bor text-center">
+            <h2 class="text-yellow-600 italic">Bolivia, La Paz</h2>
+            <p>06-07-2024</p>
+            <button disabled style="color: red;">Sold Out <i class="fas fa-ban"></i></button> <!-- Deshabilitado -->
+        </div>
+
+        <div class="bor text-center">
+            <h2 class="text-yellow-600 italic">Brasil, Sao Paulo</h2>
+            <p>20-11-2024</p>
+            <button>Comprar Ticket <i class="fas fa-ticket-alt"></i></button>
+        </div>
+
+        <div class="bor text-center">
+            <h2 class="text-green-700 italic">Estados Unidos</h2>
+            <p>20-03-2025</p>
+            <button disabled style="color: red;">Sold Out <i class="fas fa-ban"></i></button> <!-- Deshabilitado -->
+        </div>
+
+        <div class="bor text-center">
+            <h2 class="text-green-700 italic">Mexico</h2>
+            <p>12-05-2025</p>
+            <button>Comprar Ticket <i class="fas fa-ticket-alt"></i></button>
+        </div>
+    </main>
+
+    <footer class="text-center p-4">
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/tours.js"></script> <!-- Tu JavaScript personalizado -->
+</body>
+</html>

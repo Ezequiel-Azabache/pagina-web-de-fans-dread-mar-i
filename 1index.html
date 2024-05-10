@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dread Mar-i</title>
+    <link rel="shortcut icon" href="fotos/imagen.ico">
+    <link rel="stylesheet" href="pagina css/1index.css"> <!-- CSS adicional -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icons -->
+</head>
+
+<body>
+
+    <nav class="bg-gradient-to-r from-green-700 via-yellow-500 to-red-700 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-lg font-bold">Dread Mar-i</h1>
+            </div>
+            <!-- Botón para dispositivos móviles con ícono de Bootstrap -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none" onclick="toggleMenu()">
+                    <i class="bi bi-music-note-list"></i> <!-- Ícono de música -->
+                </button>
+            </div>
+            <!-- Menú para pantallas grandes -->
+            <div class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li>
+                        <a href="1index.html" class="hover:text-red-500">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="tours.html" class="hover:text-yellow-400">Tours</a>
+                    </li>
+                    <!-- Enlace para Albums con flecha para expandir/ocultar el submenú -->
+                    <a href="javascript:void(0)" class="hover:text-green-700 flex items-center" onclick="toggleSubmenu()">
+                        Albums / Sencillos
+                        <i id="albums-icon" class="bi bi-chevron-down ml-2"></i> <!-- Ícono de flecha -->
+                    </a>
+
+                    <ul id="albums-submenu" class="hidden flex flex-col space-y-1 mt-2 pl-4">
+                        <li>
+                            <a href="sencillos.html" class="hover:text-green-700">Sencillos</a>
+                        <li>
+                        <li>
+                            <a href="album10Años.html" class="hover:text-green-700">10 Años
+
+                            </a>
+                        <li>
+                            <a href="albumAmores.html" class="hover:text-green-700">Amor-es</a>
+                        </li>
+                        <li>
+                            <a href="albumcaminarasCaminos.html" class="hover:text-green-700">Caminaras Caminos</a>
+                        </li>
+                        <li>
+                            <a href="albumHermanos.html" class="hover:text-yellow-400">Hermanos</a>
+                        </li>
+                        <li>
+                            <a href="albumJahguía.html" class="hover:text-yellow-400">Jah Guía</a>
+                        </li>
+                        <li>
+                            <a href="albumLaberintos.html" class="hover:text-yellow-400">Laberintos</a>
+                        </li>
+                        <li>
+                            <a href="albumLuz.html" class="hover:text-red-700">Luz</a>
+                        </li>
+                        <li>
+                            <a href="albumTranquilo.html" class="hover:text-red-700">Tranquilo</a>
+                        </li>
+                        <li>
+                            <a href="albumTransparente.html" class="hover:text-red-800">Transparente</a>
+                        </li>
+                        <li>
+                            <a href="albumVivíendo.html" class="hover:text-red-800">Viví En Do</a>
+                        </li>
+                        <li>
+                            <a href="albumYo.html" class="hover:text-red-800">Yo</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <span class="hover:text-green-600"><a href="login.html">logout</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Menú para dispositivos móviles -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <ul class="flex flex-col space-y-2 mt-4 px-4">
+                <li>
+                    <a href="1index.html" class="hover:text-red-500">Inicio</a>
+                </li>
+                <li>
+                    <a href="tours.html" class="hover:text-red-500">Tours</a>
+                </li>
+                <li>
+                    <a href="addAlbum.html" class="hover:text-yellow-400">addAlbum</a>
+                </li>
+                <li>
+                    <!-- Enlace para Albums con flecha para expandir/ocultar el submenú -->
+                    <a href="javascript:void(0)" class="hover:text-yellow-500 flex items-center" onclick="toggleSubmenu()">
+                        Albums / Sencillos
+                        <i id="albums-icon-mobile" class="bi bi-chevron-down ml-2"></i> <!-- Ícono de flecha -->
+                    </a>
+                    <!-- Submenú para dispositivos móviles -->
+                    <ul id="albums-submenu-mobile" class="hidden flex flex-col space-y-1 mt-2 pl-4">
+                        <li>
+                            <a href="album10 Años.html" class="hover:text-green-700">10 Años</a>
+                        </li>
+                        <li>
+                            <a href="albumAmores.html" class="hover:text-green-700">Amor-es</a>
+                        </li>
+                        <li>
+                            <a href="albumcaminarasCaminos.html" class="hover:text-green-700">Caminaras Caminos</a>
+                        </li>
+                        <li>
+                            <a href="albumHermanos.html" class="hover:text-yellow-400">Hermanos</a>
+                        </li>
+                        <li>
+                            <a href="albumJahguía.html" class="hover:text-yellow-400">Jah Guía</a>
+                        </li>
+                        <li>
+                            <a href="albumLaberintos.html" class="hover:text-yellow-400">Laberintos</a>
+                        </li>
+                        <li>
+                            <a href="albumLuz.html" class="hover:text-red-700">Luz</a>
+                        </li>
+                        <li>
+                            <a href="albumTranquilo.html" class="hover:text-red-700">Tranquilo</a>
+                        </li>
+                        <li>
+                            <a href="albumTransparente.html" class="hover:text-red-800">Transparente</a>
+                        </li>
+                        <li>
+                            <a href="albumVivíendo.html" class="hover:text-red-800">Viví En Do</a>
+                        </li>
+                        <li>
+                            <a href="albumYo.html" class="hover:text-red-800">Yo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="hover:text-green-600"><a href="login.html">logout</a></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+
+    <!------------------------------------------------------------Nombre de Artista------------------------------------>
+        <h1 class="text-6xl italic text-green-700 text-center p-8 m-9">Dread Mar-i</h1>
+        <!--------------------------------------------------------Titulo de la Biografia------------------------------>
+            <h2 class="text-5xl italic text-yellow-500 text-center p-8 m-9">Biografia de Dred Mar-i</h2>
+        <!--------------------------------------------------------Biografia del Artista---------------------------------------->
+        <span class="text-1xl text-white text-center pl-5 m-5">
+            <p>
+                Dread Mar-I, nombre artístico de Mariano Javier Castro es un cantante y compositor de origen argentino,
+                conocido por implantar un nuevo estilo musical en cuanto al Reggae, Roots y Lover.
+                Nació en (Lanús, Provincia de Buenos Aires, Argentina; 31 de enero de 1978), y vivió allí hasta después
+                de abandonar séptimo grado cuando se mudó a Maipú otro provincia de Buenos Aires, Fue allí donde comenzó
+                a trabajar en la panadería que había abierto su padre. Vivió más de diez años en esta ciudad, que muchos
+                fans la consideran su ciudad natal. Dread Mar I como esconocido es ampliamente considerado como uno de
+                los artistas más populares, importantes e influyentes de cover de Juan Gabriel en toda Latinoamérica, y
+                como uno de los más importantes de cover de Juan Gabriel surgidos en la década de los años 2010
+            </p>
+        </span>
+
+        <!-------------------------------------------Canciones y Albums----------------------------------------------------------------------->
+        <h1 class="text-5xl text-red-700 text-center">Canciones</h1>
+
+        <h3 class="text-6xl text-green-700 text-center">Albums</h3>
+
+        <!------------------------------------------Fotos Grid de los Albums------------------------------------------------------------------------------------------>
+
+
+        <div class="image-grid">
+            <a href="album10Años.html"><img src="fotos/album10Años.jpeg" alt="foto del album 10 años"></a>
+            <a href="albumAmores.html"><img src="fotos/albumAmores.jpeg" alt="img del album Amor-es"></a>
+            <a href="albumcaminarasCaminos.html"><img src="fotos/albumcaminarasCaminos.jpeg"
+                    alt="img del album Caminaras Caminos"></a>
+            <a href="albumHermanos.html"><img src="fotos/albumHermanos.jpeg" alt="img del album Hermanos"></a>
+            <a href="albumLuz.html"><img src="fotos/albumLuz.jpeg" alt="img del album Luz"></a>
+            <a href="albumTranquilo.html"><img src="fotos/albumTranquilo.jpeg" alt="img del album Tranquilo"></a>
+            <a href="albumTransparente.html"><img src="fotos/albumTransparente .jpeg"
+                    alt="img del album Transparente"></a>
+            <a href="viviendo.html"><img src="fotos/albumViviendo.jpeg" alt="img del album album Viví En Do"></a>
+            <a href="albumYo.html"><img src="fotos/albumYo.jpeg" alt="img del album Yo"></a>
+            <a href="albumJahguía.html"><img src="fotos/jahGuia.jpeg" alt="img del album Jah Guía"></a>
+            <a href="albumLaberintos.html"><img src="fotos/Laberintos.jpeg" alt="img del album Laberintos"></a>
+        </div>
+
+
+
+    </div>
+    <script src="scripts/1index.js">
+    </script>
+</body>
+
+</html>

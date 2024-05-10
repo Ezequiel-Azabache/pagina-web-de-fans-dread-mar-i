@@ -1,0 +1,24 @@
+/* Estilo para el navbar con fondo degradado de colores del reggae */
+.bg-reggae {
+    background: linear-gradient(to right, red, yellow, green); /* Rojo, amarillo y verde en degradé */
+}
+
+.navbar {
+    padding: 1rem; /* Espacio para el navbar */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Espaciado para los enlaces */
+}
+
+.dropdown-menu {
+    background: linear-gradient(to right, red, yellow, green); /* Fondo del menú desplegable */
+}
+
+.dropdown-item {
+    color: white; /* Color del texto en los elementos del menú desplegable */
+}
+
+.dropdown-item:hover {
+    background: rgba(0, 0, 0, 0.2); /* Efecto hover para los elementos del menú desplegable */
+}
