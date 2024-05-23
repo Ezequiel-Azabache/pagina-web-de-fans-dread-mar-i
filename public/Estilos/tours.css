@@ -1,0 +1,129 @@
+body {
+    background-image: url("fondoMusic.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: green;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+body * {
+    position: relative;
+    z-index: 2;
+}
+
+.bor {
+    border: 2px solid rgb(0, 174, 255);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #148600; 
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #000000, #2e8d01);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button:hover {
+    background: #000000; /* Cambia a verde al pasar el ratón */
+}
+
+button:disabled {
+    background: #fc0000; /* Gris para botones deshabilitados */
+    cursor: not-allowed;
+}
+
+.sold-out-icon {
+    color: rgb(255, 255, 255);
+}
+
+#sanpablo {
+    background-image: linear-gradient(to right, #20a100, #d1db11);
+    background-clip: text;
+    color: transparent;
+}
+
+#movistar {
+    background-image: linear-gradient(to right, #00c3ff, #ffffff, #00c3ff);
+    background-clip: text;
+    color: transparent;
+}
+
+#lapaz {
+    background-image: linear-gradient(to right, #ea0008, #e5ff00, #00aa1c);
+    background-clip: text;
+    color: transparent;
+}
+
+#asuncion {
+    background-image: linear-gradient(to right, #ea0008, #ffffff, #0015ff);
+    background-clip: text;
+    color: transparent;
+}
+
+#angeles {
+    background-image: linear-gradient(to right, #003cff, #ffffff, #ff0000);
+    background-clip: text;
+    color: transparent;
+}
+
+#cdmx {
+    background-image: linear-gradient(to right, #34b900, #ffffff, #ff0000);
+    background-clip: text;
+    color: transparent;
+}
+
+#volver-inicio {
+    text-align: center;
+    margin-top: 1.5rem; /* 24px */
+}
+  
+#volver-inicio a {
+    color: #118e00; /* Color del texto en estado normal */
+    font-weight: bold; /* font-bold */
+    padding: 0.5rem 1rem; /* 8px 16px */
+    border-radius: 0.25rem; /* rounded */
+    font-size: 1.125rem; /* text-lg */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+#volver-inicio a:hover {
+    background-color: #000000; /* bg-green-500 */
+    color: #00e1ff; /* Color del texto en estado de hover */
+}
+
+#gradient-text { 
+    background-image: linear-gradient(to right, #000000, #000000, #ffffff); /*Degrade del fondo del boton volver al inicio*/
+}
+   
