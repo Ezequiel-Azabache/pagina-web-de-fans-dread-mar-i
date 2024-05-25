@@ -44,7 +44,7 @@ function mostrarContenidoWeb() {
 // Objeto para almacenar la disponibilidad de entradas
 const disponibilidad = {
   argentina: 2000,
-  paraguay: 2,
+  paraguay: 5,
   bolivia: 300,
   brasil: 10,
   usa: 0,
