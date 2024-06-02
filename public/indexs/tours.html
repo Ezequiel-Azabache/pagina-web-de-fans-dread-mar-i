@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tours 2024 / 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="fotos/toursFavicon.ico">
+  <link rel="stylesheet" href="Estilos/tours.css"> <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="text-center m-8 p-8">
+    <h1 class="text-5xl">Tours 2024 / 2025</h1>
+  </header>
+
+  <main id="contenido" class="bg-black bg-opacity-75 rounded-3xl p-8 m-8" style="display: none;">
+    <div class="bor text-center">
+      <h2 id="movistar">Argentina, Movistar Arena</h2>
+      <p>21-09-2024</p>
+      <button type="button" id="argentina" data-location="argentina" data-available="2000">
+        <span>
+          <i class="fas fa-ticket-alt"></i> Comprar entradas
+        </span>
+        <span class="sold-out-icon hidden" style="display: none;">
+          <i class="fas fa-ban"></i> Sold Out
+        </span>
+      </button>
+    </div>
+
+    <div class="bor text-center">
+      <h2 id="asuncion">Paraguay, Asuncion</h2>
+      <p>04-06-2024</p>
+      <button type="button" id="paraguay" data-location="paraguay" data-available="5">
+        <span>
+          <i class="fas fa-ticket-alt"></i> Comprar entradas
+        </span>
+        <span class="sold-out-icon hidden" style="display: none;">
+          <i class="fas fa-ban"></i> Sold Out
+        </span>
+      </button>
+    </div>
+
+    <div class="bor text-center">
+      <h2 id="lapaz">Bolivia, La Paz</h2>
+      <p>06-07-2024</p>
+      <button type="button" id="bolivia" data-location="bolivia" data-available="300">
+        <span>
+          <i class="fas fa-ticket-alt"></i> Comprar entradas
+        </span>
+        <span class="sold-out-icon hidden" style="display: none;">
+          <i class="fas fa-ban"></i> Sold Out
+        </span>
+      </button>
+    </div>
+
+    <div class="bor text-center">
+      <h2 id="sanpablo">Brasil, Sao Paulo</h2>
+      <p>20-11-2024</p>
+      <button type="button" id="brasil" data-location="brasil" data-available="10">
+        <span>
+          <i class="fas fa-ticket-alt"></i> Comprar bilhetes
+        </span>
+        <span class="sold-out-icon hidden" style="display: none;">
+          <i class="fas fa-ban"></i> Sold Out
+        </span>
+      </button>
+    </div>
+
+    <div class="bor text-center">
+      <h2 id="angeles">Estados Unidos, Los Angeles</h2>
+      <p>20-03-2025</p>
+      <button type="button" id="usa" data-location="usa" data-available="0">
+        <span>
+          <i class="fas fa-ticket-alt"></i> Comprar entradas
+        </span>
+        <span class="sold-out-icon" style="display: none;">
+          <i class="fas fa-ban"></i> Sold Out
+        </span>
+      </button>
+    </div>
+
+    <div class="bor text-center">
+      <h2 id="cdmx">México, Ciudad de México</h2>
+      <p>12-05-2025</p>
+      <button type="button" id="mexico" data-location="mexico" data-available="300">
+        <span>
+          <i class="fas fa-ticket-alt"></i> Comprar entradas
+        </span>
+        <span class="sold-out-icon hidden" style="display: none;">
+          <i class="fas fa-ban"></i> Sold Out
+        </span>
+      </button>
+    </div>
+  </main>
+
+  <div id="volver-inicio">
+    <a href="1index.html" id="gradient-text">Volver al Inicio</a>
+  </div>
+
+  <footer class="text-center p-4">
+    <p>&copy; 2024. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts/tours.js"></script> <!-- Tu JavaScript personalizado -->
+</body>
+
+</html>

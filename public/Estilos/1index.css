@@ -8,27 +8,85 @@ body{
     font-style: normal;
     }
 
-    .image-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-        grid-auto-rows: 200px; /* Altura mínima de las celdas */
-        gap: 1rem; /* Espacio entre elementos */
-        padding: 1rem; /* Espacio interno */
-    }
+  /* Estilos para la galería de imágenes */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .image-grid a {
+    display: block; /* Asegura que los elementos <a> ocupen todo el espacio disponible */
+  }
+  
+  .image-grid a img {
+    width: 100%;
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarla */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-grid a img:hover {
+    transform: scale(1.05);
+  }
+  #link {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+}
 
-    .image-grid img {
-        object-fit: cover; /* Las imágenes cubren todo el espacio */
-        width: 100%; /* Ancho completo */
-        height: 100%; /* Altura completa para cubrir la celda */
-        border-radius: 0.5rem; /* Bordes redondeados */
-        transition: transform 0.3s; /* Efecto de transición */
-    }
+#link ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
 
-    .image-grid img:hover {
-        transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-    }
+#link li {
+    display: inline-block;
+}
 
+#link a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
 
+.youtube-link i {
+    color: #FF0000; /* Rojo para YouTube */
+}
 
-   
-   
+.youtube-link:hover i {
+    color: #d00202; /* Blanco al hacer hover */
+}
+
+.instagram-link i {
+    color: #C13584; /* Color principal de Instagram */
+}
+
+.instagram-link:hover i {
+    color: #E1306C; /* Color más oscuro al hacer hover */
+}
+
+.spotify-link i {
+    color: #1DB954; /* Verde de Spotify */
+}
+
+.spotify-link:hover i {
+    color: #1ED760; /* Verde más claro al hacer hover */
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
